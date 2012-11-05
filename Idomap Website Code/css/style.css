@@ -1,0 +1,71 @@
+body {
+	background-color: white;
+	font-size: 25px;
+	font-family: 'Unica One', cursive;
+}
+
+.signIn{
+	background-color: rgb(255,255,255);
+	position: static;
+	width: 1000px;
+	border: 1px dashed #b0c4de;
+	height: auto;
+	margin: 70px auto;
+	text-align: center;
+}
+
+.submit{
+	width: 200px;
+	font-size: 100px;
+}
+
+a {
+	color: #b0c4de;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ddd;
+}
+
+#signInPageButtons{
+	margin: 20px 0px;
+}
+
+.logo{
+	width: 300px;
+	height: 300px;
+}
+
+ul, .roundabout-holder {
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25em;
+	height: 13em;
+}
+
+.roundabout-moveable-item, li {
+	position:absolute;
+	top: 0px;
+	height: 5em;
+	width: 300px;
+	margin: -80px auto;
+	background-color: #ccc;
+	text-align: center;
+	cursor: pointer;
+}
+
+li.roundabout-in-focus {
+	position:absolute;
+	margin: -80px auto;
+	top: 0px;
+	cursor: default;
+}
+
+li span {
+	display: block;
+	padding-top: 6em;
+}

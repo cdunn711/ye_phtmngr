@@ -1,0 +1,3 @@
+<?
+echo 'You are registering ...'
+?>
