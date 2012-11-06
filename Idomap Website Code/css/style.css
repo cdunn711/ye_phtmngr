@@ -1,0 +1,168 @@
+/* BASIC STYLE CHOICES */
+
+body {
+	background-color: #F5F5F5;
+	font-size: 25px;
+	font-family: 'Unica One', cursive;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
+
+h1{
+	font-size: 3em;
+	color: #b0c4de;
+}
+
+a{
+	color: #b0c4de;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+a:hover{
+	color: #ddd;
+}
+
+/* ELEMENTS */
+
+.signIn{
+	background-color: rgba(255,255,255, 0.6);
+	width: 1000px;
+	border: 1px dashed #b0c4de;
+	margin: 0px auto 200px;
+	text-align: center;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+	position: relative;
+	z-index: 1;
+}
+
+.info{
+	position: relative;
+	z-index: 2;
+}
+
+.register{
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	min-width: 450px;
+	padding: 50px 30px;
+}
+
+
+.register>table>tbody>tr>td{
+	width: 200px;
+}
+
+.register{
+	display:none;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.logo{
+	width: 300px;
+	height: 300px;
+}
+
+#title
+{
+	width: 100%;
+	display: block;
+	font-size: 10em;
+	color: #000;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	z-index: 2;
+	font-family: 'Unica One', cursive;
+	text-decoration: bold;
+	line-height: 1em;
+}
+
+
+form input{
+	width: 200px;
+	height: 30px;
+}
+
+
+/* SHADOW */
+
+.one-edge-shadow{
+	-webkit-box-shadow: 0 10px 50px -6px black;
+	   -moz-box-shadow: 0 10px 50px -6px black;
+	        box-shadow: 0 10px 50px -6px black;
+}
+
+/* BUTTONS */
+
+.button.bClose{
+	border-radius: 7px 7px 7px 7px;
+	box-shadow: none;
+	font: bold 131% sans-serif;
+	padding: 0 6px 2px;
+	position: absolute;
+	right: -7px;
+	top: -7px;
+}
+
+.button{
+	background-color: #b0c4de;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	height: auto;
+	font-family: 'Unica One', cursive;
+}
+
+#signInPageButtons{
+	margin: 20px 0px;
+}
+
+
+
+/* ROUNDABOUT */
+
+ul, .roundabout-holder {
+	list-style: none;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25em;
+	height: 13em;
+}
+
+.roundabout-moveable-item, li {
+	position:absolute;
+	top: 0px;
+	height: 5em;
+	width: 300px;
+	margin: -80px auto;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.9;
+}
+
+li.roundabout-in-focus {
+	position:absolute;
+	margin: -80px auto;
+	top: 0px;
+	cursor: default;
+}
+
+li span {
+	display: block;
+	padding-top: 6em;
+}
