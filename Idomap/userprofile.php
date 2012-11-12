@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,11 +23,26 @@
 </head>
 <body>
 	<?php
+		session_start();
 		include('navbar.php');
 	?>
 	<div id="userheader">
-		<span class="name">Ketetha Olengue</span>
-		<span class="tagline">16 and Pregnant, hehe</span>
+		<?php
+			$id = $_SESSION['id'];
+			if ($id != null){
+				$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");	
+				$getName = $dbh->prepare("SELECT first_name, last_name FROM UserInfos WHERE user_id = ?");
+				if ($getName->execute(array($id))){
+					$name = $getName->fetch();
+					echo "<span class='name'>$name[0] $name[1]</span>";
+				}
+				else
+					header('Location: Error.html');			
+			}
+			else
+				header('Location: Error.html');	
+		?>
+		<span class="tagline">Time moves in one direction...</span>
 		<span class="view"><a href="">Timeline</a> | <a href="">Moments</a></span>
 		<img src="http://aux.iconpedia.net/uploads/11296555161076849797.png" id="avatar" alt="avatar"/>
 		<div class="infobox photobox">

@@ -31,7 +31,7 @@ a:hover{
 
 /* ELEMENTS */
 
-.signIn{
+.signIn, .contentbox{
 	background-color: rgba(255,255,255, 0.6);
 	width: 1000px;
 	border: 1px dashed #b0c4de;
@@ -306,6 +306,40 @@ a:hover{
 	line-height: 1em;
 }
 
+.header{
+	width: 100%;
+	display: block;
+	font-size: 4em;
+	color: #000;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	line-height: 1em;
+	margin-bottom: 20px;
+}
+
+span.links{
+	margin-top: 50px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.links a{
+	margin: 10px;
+}
+
+#settings1{
+	display: all;
+}
+
+#settings2{
+	display: none;
+}
+#settings table, #photos table{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
 
 form input{
 	width: 200px;

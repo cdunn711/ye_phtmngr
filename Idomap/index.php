@@ -35,8 +35,8 @@
 		</ul>
 		<p>
 		<a class="prev"><<</a> | <a class="control-play on">&#9689;</a> | <a class="next">>></a>
-		<form id="signIn" name="signIn" method="post">
-			<label for="userName">Username:</label>
+		<form id="signIn" name="signIn" method="post" action="php/signin.php">
+			<label for="userName">Username (email):</label>
 			<br/><input type="text" name="userName" id="userName"/>
 			<br/><label for="password">Password:</label>
 			<br/><input type="password" name="password" id="password" autocomplete="off"/>

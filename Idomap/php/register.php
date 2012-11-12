@@ -1,7 +1,28 @@
 <?php
 
+/*
+	
+	$con = new mysqli("ec2-54-243-133-137.compute-1.amazonaws.com", "team", "teampass", "Idomap");
+	//$con->connect("localhost", "team", "teampass", "Idomap");
+		//$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
+		
+	if (mysqli_connect_errno())
+		exit("connection failed: " . mysqli_connect_error());
+	
+	echo 'after connect';
+	
+	
+	
+	$con = mysql_connect("localhost", "team", 'teampass');
+	if ($con)
+			{
+				echo 'Could not connect: ' . mysql_error() ;
+			}
+	mysql_select_db("Idomap", $con);
+	echo 'connected';
+*/
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
-
+	
 	if (isset($_POST['firstName'])){
 		$first = $_POST['firstName'];
 		$last = $_POST['lastName'];
@@ -11,7 +32,7 @@
 		$birthMonth = mysql_real_escape_string($_POST['birthMonth']);
 		$sex = $_POST['sex'];
 		$privacy = $_POST['privacy'];
-		
+
 		$salt = '$2a$13$'.substr(sha1($email),0,22); 
 		$hashed_pass = substr(crypt("$pass", $salt), 32);
 		
@@ -20,7 +41,7 @@
 		$birth = date('Y-m-d', strtotime($birthMonth));
 		
 		$s = true;
-		if ($sex === 'F')
+		if ($sex === 'f')
 			$s = false;
 		$p = 0;	// Public is 0
 		if ($privacy === "private")
@@ -48,8 +69,5 @@
 		
 		//$dbh->close();
 	}
-	else{
-		echo 'hi hate you';
-	}
-	//header('Location: ../index.html');
+
 ?>

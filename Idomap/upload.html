@@ -3,12 +3,11 @@
 <html>
 <head>
 	<title>Upload a picture</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css>
 	<script type="text/javascript" src="js/javascript.js"></script>	
 </head>
 <body>
 <h1>Upload Picture</h1>
-<form id="register" name="register" method="post">
+<form id="upload" name="upload" method="post" action="php/uploadphoto.php" >
       <label for="browse">Select File:</label>
 	<input type="file" name="browse" id="browse"/>
       <label for="title">Picture Title:</label>
@@ -18,14 +17,12 @@
       <label for="tags">Tags:</label>
 	<input type="text" name="tags" id="tags"/>            	
 	Privacy:
-	<select id="privacy">
+	<select id="privacy" name="privacy">
 		<option value="public">Public</option>
 		<option value="private">Private</option>
 	</select>
-      	Choose date:
-	<input type="text" name="picMonth" value="MM"/>  
-	<input type="text" name="picDay" value="DD"/>
-	<input type="text" name="picYear" value="YYYY"/>
+    Choose date:
+	<input type="date" name="date" value="" placeholder="MM/DD/YYYY"/>
 	
 	<input type="submit" value="Upload"/>
 </form>
