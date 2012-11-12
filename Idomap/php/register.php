@@ -1,4 +1,5 @@
 <?php
+
 /*
 	
 	$con = new mysqli("ec2-54-243-133-137.compute-1.amazonaws.com", "team", "teampass", "Idomap");
@@ -20,9 +21,8 @@
 	mysql_select_db("Idomap", $con);
 	echo 'connected';
 */
-
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
-
+	
 	if (isset($_POST['firstName'])){
 		$first = $_POST['firstName'];
 		$last = $_POST['lastName'];
