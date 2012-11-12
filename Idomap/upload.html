@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Last updated by Darius Clark on 11/1/2012-->
+<html>
+<head>
+	<title>Upload a picture</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css>
+	<script type="text/javascript" src="js/javascript.js"></script>	
+</head>
+<body>
+<h1>Upload Picture</h1>
+<form id="register" name="register" method="post">
+      <label for="browse">Select File:</label>
+	<input type="file" name="browse" id="browse"/>
+      <label for="title">Picture Title:</label>
+	<input type="text" name="title" id="title"/>
+      <label for="description">Description:</label>
+	<input type="text" name="description" id="description"/>
+      <label for="tags">Tags:</label>
+	<input type="text" name="tags" id="tags"/>            	
+	Privacy:
+	<select id="privacy">
+		<option value="public">Public</option>
+		<option value="private">Private</option>
+	</select>
+      	Choose date:
+	<input type="text" name="picMonth" value="MM"/>  
+	<input type="text" name="picDay" value="DD"/>
+	<input type="text" name="picYear" value="YYYY"/>
+	
+	<input type="submit" value="Upload"/>
+</form>
+
+
+</body>
+
+</html>

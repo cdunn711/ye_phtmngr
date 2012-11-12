@@ -1,4 +1,9 @@
+html {
+	overflow: auto;
+}
+
 .popbox {
+  overflow: auto;
   display: inline;
   margin:0px auto;
   text-align:center;
