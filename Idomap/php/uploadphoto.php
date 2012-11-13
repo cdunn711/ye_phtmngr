@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	
+	/*
 	$dbh = new PDO('mysql:host=localhost; dbname=Idomap', "team", "teampass");
 	
 	if (isset($_FILES['browse']['name'])){
@@ -20,5 +20,6 @@
 	
 	else
 		header('Location: ../Error.html');
-	
+	*/
+	header('Location: ../userprofile.php');
 ?>

@@ -42,7 +42,7 @@
 			else
 				header('Location: Error.html');	
 		?>
-		<span class="tagline">Time moves in one direction...</span>
+		<!-- <span class="tagline">Time moves in one direction...</span> -->
 		<span class="view"><a href="">Timeline</a> | <a href="">Moments</a></span>
 		<img src="http://aux.iconpedia.net/uploads/11296555161076849797.png" id="avatar" alt="avatar"/>
 		<div class="infobox photobox">
