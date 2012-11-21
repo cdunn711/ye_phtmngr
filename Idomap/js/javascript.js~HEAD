@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
-		/*
+	  $('.popbox').popbox();
+		
       //$('#roundHolder').roundabout();
       //btnNext: ".next"
       //autoplay: true
-      
+      /*
       $('.roundabout-holder li')
 			.bind({
 				"reposition": function() {
@@ -22,7 +23,6 @@ $(document).ready(function() {
 			//$(this).css('top', '0px');
 			})
 		*/
-		
 		$('.roundabout-holder').roundabout({
 			minScale: 0.7,
 			easing: 'easeOutExpo',
@@ -31,49 +31,25 @@ $(document).ready(function() {
 			btnPrev: ".prev",
 			enableDrag: true,
 			autoplay: true,
-			duration: 1000
+			duration: 1600
 		});
-		/*
-		var control = $('.controls').children();
-		for (var i in control){
-	
-		}*/
-		
-		/*
-		$('.timelineMinor dt a').click({
-			console.log("opened this");
-
-			minScale: 0.7,
-			easing: 'easeOutExpo',
-			btnToggleAutoplay: ".control-play",
-			btnNext: ".next",
-			btnPrev: ".prev",
-			enableDrag: true,
-			autoplay: true,
-			duration: 1000
-		});		*/
-		
-		$("#register").validator();
-		
-		$(".register input[required='required']").after(" <span style='color:red'>*</span>");
-
 });
 
 window.onload = function() {
 
-		$.timeliner();
-		
 		$('.control-play').click( function(){
 			if ($(this).hasClass('on')){
+				console.log("was on");
 				$(this).removeClass('on');
 				$(this).html("&#9658;");
 			}
 			else{
+				console.log("wasn't on");
 				$(this).addClass('on');
 				$(this).html("&#9689;");
 			}
 		});
-				
+		
 		$('.button.menu').click( function(){
 			if ($('.signIn').hasClass('on')){
 				$('.signIn').fadeOut('slow', function(){
@@ -96,38 +72,16 @@ window.onload = function() {
 			}
 		});
 		
-		
 		$('#goRegister').click(function() {
 			console.log("pressed register button");
 			$('.register').bPopup({
 				fadeSpeed: 'slow',
 				follow: [false, false], //x, y
-				position: [50, 50], //x, y
-				modalColor: '#b0c4de',
+				position: [200, 200], //x, y
+				modalColor: 'black',
 				modalClose: false,
             	opacity: 0.6,
             	positionStyle: 'fixed'
 			});
 		});
-
-		$('#settinglink1').click(function() {
-			$('#settings1').css("display","block");
-			$('#settings2').css("display","none");
-			$('#other').css("display","none");
-		});
-
-		$('#settinglink2').click(function() {
-			$('#settings1').css("display","none");
-			$('#settings2').css("display","block");
-			$('#other').css("display","none");
-		});
-
-		$('#settinglink3').click(function() {
-			$('#settings1').css("display","none");
-			$('#settings2').css("display","none");
-			$('#other').css("display","block");
-		});
-
-		//$('body').onResize(function(){ $(this).css("overflow","scroll");}); //doesn't seem to be necessary
-
-}		
+}

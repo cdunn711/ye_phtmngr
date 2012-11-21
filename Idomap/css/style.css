@@ -30,6 +30,28 @@ a:hover{
 }
 
 /* ELEMENTS */
+#upload
+{
+text-align:center;
+}
+#uploadpic
+{
+	background-color: rgba(255,255,255, 0.6);
+	width: 500px;
+	border: 1px dashed #b0c4de;
+	margin: 0px auto 100px;
+	text-align: center;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+	position: relative;
+	z-index: 1;
+}
+#uploadpic table
+{
+
+margin-left:auto;
+margin-right:auto;
+}
 
 .signIn, .contentbox{
 	background-color: rgba(255,255,255, 0.6);
@@ -115,11 +137,12 @@ a:hover{
 }
 
 #navbar li li{
-	float: none;
+	float: left;
+	display:block;
 	background-color: rgba(176, 196, 222, .8);
 }
 
-#navbar li li a {
+#navbar li li a {	
 	color: #fff;
 }
 
@@ -274,7 +297,19 @@ a:hover{
 	position: relative;
 	top: 50px;
 }
-
+.upload
+{
+	background-color: white;
+	border: 1px dashed #b0c4de;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 25px 5px #999;
+	color: #111;
+	display: none;
+	min-width: 450px;
+	padding: 50px 30px;
+	position: relative;
+	top: 50px;
+}
 
 .register>table>tbody>tr>td{
 	width: 200px;
@@ -318,13 +353,18 @@ a:hover{
 	margin-bottom: 20px;
 }
 
-span.links{
-	margin-top: 50px;
-	border-bottom: 1px dashed #ddd;
+div.links{
+	background-color: lightBlue;
+	margin-top: 20px;
+	z-index: -2;
+	padding: 5px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
 }
 
 .links a{
 	margin: 10px;
+	color: black;
 }
 
 #settings1{
@@ -365,6 +405,10 @@ form input{
 	position: absolute;
 	right: -7px;
 	top: -7px;
+}
+
+.signIn .button.bClose{
+	display: none;
 }
 
 .button{
