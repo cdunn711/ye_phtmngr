@@ -45,7 +45,7 @@
 		</p>
 		<div id="signInPageButtons">
 			<a href="tutorial.html">Tutorial</a> | 
-			<a href="home.html">Skip to Home</a> | 
+			<a href="userprofile.php">Browse Photos</a> | 
 			<a id="goRegister">Register</a>
 		</div>
 	</div>

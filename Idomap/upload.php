@@ -6,10 +6,13 @@ on 11/1/2012-->
 <head>
 	<title>Upload a picture</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/javascript.js"></script>	
 </head>
 <body  id="uploadpic">
+<? session_start();	
+	include('navbar.php');
+?>
 <h1 >Upload Picture</h1>
 
 
